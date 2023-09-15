@@ -1,0 +1,185 @@
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px 
+-weights: 400, 700 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: hsl(204, 43%, 93%);
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem auto;
+  width: 37.5rem;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+#container #hero {
+  background: white;
+  padding: 3rem;
+  width: 37.5rem;
+  border-radius: 8px;
+}
+
+#hero h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 2.7rem;
+  font-size: 2.5rem;
+}
+
+#hero h2 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 2.5rem;
+  font-size: 1.7rem;
+}
+
+#hero p {
+  color: hsl(218, 22%, 67%);
+  line-height: 3rem;
+}
+
+#container #subscribe {
+  background: hsl(179, 62%, 43%);
+  color: white;
+  padding: 3rem;
+  width: 37.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+#subscribe h1 {
+  margin-bottom: 2.7rem;
+  font-size: 2rem;
+}
+
+#subscribe #price {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: rgba(255, 255, 255, 0.473);
+  margin-bottom: 0.8rem;
+}
+
+#subscribe p #price-sub {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+#subscribe button {
+  width: 100%;
+  margin-top: 3rem;
+  padding: 1.8rem;
+  border-radius: 6px;
+  border-style: none;
+  background: hsl(71, 73%, 54%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.6rem;
+  cursor: pointer;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+#subscribe button:hover {
+  background: hsl(71, 57%, 51%);
+  transition: 0.5s;
+}
+
+#container #why-us {
+  background: #4abebd;
+  color: white;
+  width: 37.5rem;
+  padding: 3rem;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+#why-us h1 {
+  margin-bottom: 2.7rem;
+  font-size: 2rem;
+}
+
+#why-us p {
+  line-height: 2.5rem;
+  padding-right: 10.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  #container {
+    width: 70rem;
+    height: 50rem;
+  }
+
+  #container #hero {
+    width: 70rem;
+  }
+
+  #hero h2 {
+    margin-bottom: 1.4rem;
+    font-size: 1.8rem;
+  }
+
+  #hero p {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.7rem;
+    font-weight: bold;
+  }
+
+  #box-month-why-us {
+    display: flex;
+  }
+
+  #container #subscribe {
+    width: 35rem;
+    border-radius: 0 0 0 8px;
+  }
+
+  #subscribe button {
+    width: 90%;
+    margin: 4rem 0 0;
+    padding: 1.7rem;
+    border-radius: 5px;
+  }
+
+  #container #why-us {
+    width: 35rem;
+    border-radius: 0 0 8px;
+  }
+}
